@@ -1,0 +1,214 @@
+{
+  "commands": {
+    "delete": {
+      "settings": {
+        "loadApp": false,
+        "stayAlive": false
+      },
+      "commandPath": "./commands/Delete",
+      "commandName": "delete",
+      "description": "",
+      "args": [],
+      "aliases": [],
+      "flags": [
+        {
+          "name": "debug",
+          "propertyName": "debug",
+          "type": "boolean"
+        },
+        {
+          "name": "key",
+          "propertyName": "key",
+          "type": "string"
+        },
+        {
+          "name": "index",
+          "propertyName": "index",
+          "type": "number",
+          "alias": "i"
+        }
+      ]
+    },
+    "get": {
+      "settings": {
+        "loadApp": false,
+        "stayAlive": false
+      },
+      "commandPath": "./commands/Get",
+      "commandName": "get",
+      "description": "",
+      "args": [],
+      "aliases": [],
+      "flags": [
+        {
+          "name": "debug",
+          "propertyName": "debug",
+          "type": "boolean"
+        },
+        {
+          "name": "key",
+          "propertyName": "key",
+          "type": "string"
+        }
+      ]
+    },
+    "insert": {
+      "settings": {
+        "loadApp": false,
+        "stayAlive": false
+      },
+      "commandPath": "./commands/Insert",
+      "commandName": "insert",
+      "description": "",
+      "args": [],
+      "aliases": [],
+      "flags": [
+        {
+          "name": "debug",
+          "propertyName": "debug",
+          "type": "boolean"
+        },
+        {
+          "name": "key",
+          "propertyName": "key",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "propertyName": "value",
+          "type": "string"
+        }
+      ]
+    },
+    "update": {
+      "settings": {
+        "loadApp": false,
+        "stayAlive": false
+      },
+      "commandPath": "./commands/Update",
+      "commandName": "update",
+      "description": "",
+      "args": [],
+      "aliases": [],
+      "flags": [
+        {
+          "name": "debug",
+          "propertyName": "debug",
+          "type": "boolean"
+        },
+        {
+          "name": "key",
+          "propertyName": "key",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "propertyName": "value",
+          "type": "string"
+        },
+        {
+          "name": "index",
+          "propertyName": "index",
+          "type": "number",
+          "alias": "i"
+        }
+      ]
+    },
+    "dump:rcfile": {
+      "settings": {},
+      "commandPath": "@adonisjs/core/build/commands/DumpRc",
+      "commandName": "dump:rcfile",
+      "description": "Dump contents of .adonisrc.json file along with defaults",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "list:routes": {
+      "settings": {
+        "loadApp": true
+      },
+      "commandPath": "@adonisjs/core/build/commands/ListRoutes/index",
+      "commandName": "list:routes",
+      "description": "List application routes",
+      "args": [],
+      "aliases": [],
+      "flags": [
+        {
+          "name": "verbose",
+          "propertyName": "verbose",
+          "type": "boolean",
+          "description": "Display more information"
+        },
+        {
+          "name": "reverse",
+          "propertyName": "reverse",
+          "type": "boolean",
+          "alias": "r",
+          "description": "Reverse routes display"
+        },
+        {
+          "name": "methods",
+          "propertyName": "methodsFilter",
+          "type": "array",
+          "alias": "m",
+          "description": "Filter routes by method"
+        },
+        {
+          "name": "patterns",
+          "propertyName": "patternsFilter",
+          "type": "array",
+          "alias": "p",
+          "description": "Filter routes by the route pattern"
+        },
+        {
+          "name": "names",
+          "propertyName": "namesFilter",
+          "type": "array",
+          "alias": "n",
+          "description": "Filter routes by route name"
+        },
+        {
+          "name": "json",
+          "propertyName": "json",
+          "type": "boolean",
+          "description": "Output as JSON"
+        },
+        {
+          "name": "table",
+          "propertyName": "table",
+          "type": "boolean",
+          "description": "Output as Table"
+        },
+        {
+          "name": "max-width",
+          "propertyName": "maxWidth",
+          "type": "number",
+          "description": "Specify maximum rendering width. Ignored for JSON Output"
+        }
+      ]
+    },
+    "generate:key": {
+      "settings": {},
+      "commandPath": "@adonisjs/core/build/commands/GenerateKey",
+      "commandName": "generate:key",
+      "description": "Generate a new APP_KEY secret",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "repl": {
+      "settings": {
+        "loadApp": true,
+        "environment": "repl",
+        "stayAlive": true
+      },
+      "commandPath": "@adonisjs/repl/build/commands/AdonisRepl",
+      "commandName": "repl",
+      "description": "Start a new REPL session",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    }
+  },
+  "aliases": {}
+}
